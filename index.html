@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Show</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <script src="./script/script.js" async></script>
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav class=" container-fluid around osd ">
+    <h3>GraphIt</h3>
+    <ul class="between">
+      <li><a href="./index.html">HOME</a></li>
+      <li><a href="./about/about.html">ABOUT</a></li>
+      <li><a href="./contact/contact.html">CONTACT</a></li>
+      <li><a href="#">NOTICE</a></li>
+    </ul>
+  </nav>
+
+  <!-- Input field -->
+  <section class=" input-section container col-between isd">
+    
+    <!-- Input form -->
+    <form class=" between osd ">
+      <div class="title-div col-between">
+        <label for="title">TITLE</label>
+        <input type="text" id="title">
+      </div>
+      <div class="value-div col-between">
+        <label for="value">VALUE</label>
+        <input type="text" id="value">
+      </div>
+    </form>
+
+    <!-- Add button -->
+    <button id="add">ADD</button>
+  </section>
+
+  <!-- Main section -->
+  <main class="between-top container">
+    
+    <!-- Left  -->
+    <section class=" left osd col-between">
+      <button class=" reset-button w100" id="reset">RESET</button>
+
+      <!-- Title  -->
+      <div class="title-div w100 between">
+        <div class="w50">TITILE</div>
+        <div class="w25">VALUE</div>
+        <div class="w25">COLOR</div>
+      </div>
+
+      <!-- data List -->
+      <div class="data-list col-between w100 " id="data-list">
+        <div class=" data-item ">
+          <div class="item-values">
+            <div class=" title">TITLE</div>
+            <div class="value">32</div>
+            <div class="color">#ff0000</div>
+          </div>
+          <!-- Edit and remove -->
+          <div class=" item-buttons">
+            <button class="edit">EDIT</button>
+            <button class="delet">DELET</button>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Right -->
+    <section class="right osd w50">
+
+      <!-- bar style navigator -->
+      <ul class="chart-styles between">
+        <li>BAR</li>
+        <li>PI</li>
+      </ul>
+
+      <!-- percent level -->
+      
+      <!-- Maing chart  chart will be push inside this chart holder-->
+      <section class=" between w100" id="chart-div">
+        <div class="percent-level col-between h100">
+          <h6>100</h6>
+          <h6>90</h6>
+          <h6>80</h6>
+          <h6>70</h6>
+          <h6>60</h6>
+          <h6>50</h6>
+          <h6>40</h6>
+          <h6>30</h6>
+          <h6>20</h6>
+          <h6>10</h6>
+          <h6>0</h6>
+        </div>
+        <!-- Chart -->
+        <div class="chart around-bottom w100" id="chart">
+          <div class="h100 w25">1</div>
+          <div class="h100 w25">2</div>
+        </div>
+      </section>
+
+      <!-- Data label -->
+      <div class="data-label" id="data-label">
+        <div class=" label-item ">
+          <h5>titlel</h5> <div></div>
+        </div>
+      </div>
+
+      <!-- Download Buttom -->
+      <button class=" osd w100" id="download">DOWNLOAD IMGAE</button>
+
+
+
+
+
+    </section>
+
+
+  </main>
+
+
+
+</body>
+</html>
