@@ -126,6 +126,7 @@ function editItem(e) {
 // delet Item
 function deleteItem(e) {
   dataList.removeChild(e.target.parentNode.parentNode);
+  upadteChart();
 }
 
 // update
