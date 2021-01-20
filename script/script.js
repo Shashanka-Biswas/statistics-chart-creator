@@ -225,7 +225,7 @@ function upadteChart() {
 
     // Creating label item
     const labelItem = document.createElement("div");
-    labelItem.className = 'label-item';
+    labelItem.className = "label-item";
     const labelItemTitle = document.createElement("h5");
     const labelItemColor = document.createElement("div");
     // pushing value in the label
@@ -236,4 +236,23 @@ function upadteChart() {
     labelItem.appendChild(labelItemColor);
     label.appendChild(labelItem);
   }
+}
+
+// dom to html
+// Downloading img=node with the help of "DomToImage" module and saving this with the help of "Filesaver" module
+// The modules are attached in the "index.html" file.
+
+downloadButton.addEventListener("click", downloadChart);
+
+function downloadChart() {
+  const node = document.getElementById("img-node");
+
+  domtoimage
+    .toPng(node)
+    .then(function (ImgDataUrl) {
+      window.saveAs(ImgDataUrl, "Chart.png");
+    })
+    .catch(function (error) {
+      console.error("oops, something went wrong!", error);
+    });
 }
